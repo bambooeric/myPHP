@@ -85,12 +85,15 @@ $table="CREATE TABLE Persons
 if(mysql_query($table,$mysql_con))
 {
 	echo 'Create table successed!'.$br;
-
+	//insert
 	mysql_query("INSERT INTO Persons (FirstName, LastName,City, Age) VALUES ('Peter', 'Griffin', 'Shenzhen', '35')");
 	mysql_query("INSERT INTO Persons (FirstName, LastName,City, Age) VALUES ('Glenn', 'Quagmire', 'Shenzhen', '33')");
 
 }else{
 	echo 'Create table failed:'.mysql_error().$br;
+	//update 
+	mysql_query("UPDATE Persons SET Age = '36' WHERE FirstName = 'Peter' AND LastName = 'Griffin'");
+
 }
 
 $result = mysql_query('select * from Persons order by Age');
