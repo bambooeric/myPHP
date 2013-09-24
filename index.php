@@ -118,7 +118,6 @@ while($row = mysql_fetch_array($result))
 echo "</table>";
 
 
-
 if($mysql_con){
 	mysql_close($mysql_con);
 }
