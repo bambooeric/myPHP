@@ -93,7 +93,7 @@ if(mysql_query($table,$mysql_con))
 	echo 'Create table failed:'.mysql_error().$br;
 }
 
-$result = mysql_query('select * from Persons');
+$result = mysql_query('select * from Persons order by Age');
 echo "<table border=1>
 	<tr>
 		<th>FirstName</th>
@@ -113,6 +113,8 @@ while($row = mysql_fetch_array($result))
   	echo "</tr>";
 }
 echo "</table>";
+
+
 
 if($mysql_con){
 	mysql_close($mysql_con);
