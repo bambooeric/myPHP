@@ -125,5 +125,14 @@ if($mysql_con){
 ?>
 
 
+<!-- Testing make xml to dispaly the mysql resualt -->
+<br/>Display the mysql table content into xml...<br/>
+<form action="xml.php" method="post">
+	DataBase:<input type="text" name="database" />
+	Table:<input type="text" name="table" />
+	<input type="submit" />
+</form>
+
+
 </body>
  </html>
