@@ -1,6 +1,6 @@
 <?php
 $br="<br />";
-$sql = mysql_connect("localhost:3000","root","root");
+$sql = mysql_connect("localhost:3306","root","root");
 if(!$sql)
 {
 	die("Connect to mysql failed: ".mysql_error());
